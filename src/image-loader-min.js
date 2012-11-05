@@ -1,0 +1,3 @@
+var d=!0;function f(a,b){this.c=[];this.b=[];this.a=[];a&&this.load(a,b)}
+f.prototype={load:function(a,b){if("string"===typeof a)if(this.e(a,b),this.g(a))this.d(a);else{if(!this.h(a)){this.k(a);var c=new Image;c.src=a;var e=this;c.onload=function(){e.j(a);e.i(a,c);e.d(a)};return d}}else return!1},i:function(a,b){this.c[a]=b;return d},f:function(a){return this.c[a]},k:function(a){this.b[a]=0;return d},h:function(a){return 0===this.b[a]},j:function(a){this.b[a]=1;return d},g:function(a){return 1===this.b[a]},e:function(a,b){return b?(this.a[a]||(this.a[a]=[]),this.a[a].push(b),
+d):!1},d:function(a){for(var b=this.a[a],c=b.length;0<c;c-=1)b[0](this.f(a)),b.shift();delete this.a[a];return d}};IL=f;
