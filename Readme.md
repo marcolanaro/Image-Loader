@@ -30,7 +30,7 @@ If you call multiple time the function `load` for the same image, the different 
 		console.log("Second Callback");
 	});
 
-The result is:
+The result after one load of the image (only one TCP/IP transmission) is:
 
 	--> First Callback
 	--> Second Callback
